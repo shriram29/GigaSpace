@@ -5,13 +5,54 @@
     <title>Gigga Space</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <style media="screen">
-      h1 {
+      :root {
+        --alpha: 0.8;
+      }
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        background-color: #191919;
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      ::-moz-selection {
+        background-color: rgba(0, 181, 204, 0.8);
+      }
+
+      ::selection {
+        background-color: rgba(0, 181, 204, 0.8);
+      }
+
+      .heading {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .typo {
+        color: rgba(255, 255, 255, var(--alpha));
+        cursor: default;
         font-family: 'Source Code Pro', monospace;
+        font-size: 10vmax;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0;
+        outline: none;
+        padding: 0 10% 1.2% 10%;
+        text-align: center;
+        transition: color 0.1s linear;
       }
     </style>
   </head>
   <body>
     <!-- Landing page of Gigga Space -->
-    <h1>Gigga Space</h1>
+  <div class="heading">
+    <h1 class="typo">Gigga Space</h1>
+  </div>
   </body>
 </html>
